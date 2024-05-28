@@ -24,15 +24,15 @@ Metrics/BlockLength:
 Metrics/ParameterLists:
   Max: 8
   Exclude:
-    - "lib/nylas/calendar_collection.rb"
+    - "lib/nylas_v2/calendar_collection.rb"
 
 Metrics/MethodLength:
   Exclude:
-    - "lib/nylas/calendar_collection.rb"
+    - "lib/nylas_v2/calendar_collection.rb"
 
 Metrics/ModuleLength:
   Exclude:
-    - "lib/nylas/model.rb"
+    - "lib/nylas_v2/model.rb"
 
 Naming/FileName:
   Exclude:

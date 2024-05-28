@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require "./lib/nylas/version"
+require "./lib/nylas_v2/version"
 
 # Consistently apply nylas' standard gem data across gems
 module GemConfig
   def self.apply(gem, name)
     gem.name = name
-    gem.files = Dir.glob("lib/{#{name}.rb,#{name}/**/*.rb}")
+    gem.files = Dir.glob("lib/nylas_v2.rb,nylas_v2/**/*.rb}")
     gem.license = "MIT"
-    gem.version = Nylas::VERSION
+    gem.version = NylasV2::VERSION
     gem.platform = "ruby"
     gem.required_ruby_version = ">= 2.3"
     append_nylas_data(gem)
@@ -25,12 +25,12 @@ module GemConfig
 
   def self.metadata
     {
-      "bug_tracker_uri" => "https://github.com/nylas/nylas-ruby/issues",
-      "changelog_uri" => "https://github.com/nylas/nylas-ruby/blob/master/CHANGELOG.md",
+      "bug_tracker_uri" => "https://github.com/nylas_v2/nylas-ruby/issues",
+      "changelog_uri" => "https://github.com/nylas_v2/nylas-ruby/blob/master/CHANGELOG.md",
       "documentation_uri" => "http://www.rubydoc.info/gems/nylas",
       "homepage_uri" => "https://www.nylas.com",
-      "source_code_uri" => "https://github.com/nylas/nylas-ruby",
-      "wiki_uri" => "https://github.com/nylas/nylas-ruby/wiki"
+      "source_code_uri" => "https://github.com/nylas_v2/nylas-ruby",
+      "wiki_uri" => "https://github.com/nylas_v2/nylas-ruby/wiki"
     }
   end
 

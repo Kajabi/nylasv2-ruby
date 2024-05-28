@@ -4,8 +4,8 @@
 
 # Nylas Ruby SDK
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nylas/nylas-ruby/CI)](https://github.com/nylas/nylas-ruby/actions/workflows/rspec.yml)
-[![codecov](https://codecov.io/gh/nylas/nylas-ruby/branch/main/graph/badge.svg?token=IKH0YMH4KA)](https://codecov.io/gh/nylas/nylas-ruby)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/nylas_v2/nylas-ruby/CI)](https://github.com/nylas_v2/nylas-ruby/actions/workflows/rspec.yml)
+[![codecov](https://codecov.io/gh/nylas_v2/nylas-ruby/branch/main/graph/badge.svg?token=IKH0YMH4KA)](https://codecov.io/gh/nylas_v2/nylas-ruby)
 
 The Nylas Communications Platform allows developers to quickly build features that connect to every inbox, calendar, and contacts book in the world. Nylas makes it easy to build an integration that can be completed in days, and provides pre-built security and compliance features, and a 99.9% guaranteed uptime. Integrations with the Nylas Communications Platform are secure, reliable, and easy to use and maintain.
 
@@ -27,7 +27,7 @@ If you have a question that needs an answer, please reach out to support@nylas.c
 - Ruby 2.3 or above.
 - Ruby Frameworks: `rest-client`, `json`, `yajl-ruby`.
 
-We support Rails 4.2 and above. A more detailed compatibility list can be found in our [list of Gemfiles](https://github.com/nylas/nylas-ruby/tree/master/gemfiles).
+We support Rails 4.2 and above. A more detailed compatibility list can be found in our [list of Gemfiles](https://github.com/nylas_v2/nylas-ruby/tree/master/gemfiles).
 
 ### Install
 
@@ -52,7 +52,7 @@ gem install nylas
 To install the SDK from source, clone this repo and install with bundle.
 
 ```bash
-git clone https://github.com/nylas/nylas-ruby.git && cd nylas-ruby
+git clone https://github.com/nylas_v2/nylas-ruby.git && cd nylas-ruby
 bundle install
 ```
 
@@ -76,7 +76,7 @@ You can run tests locally using ```rspec```:
 ```shell
 rspec spec
 ```
-    
+
 ### MacOS 10.11 (El Capitan) Note
 
 Apple stopped bundling OpenSSL with MacOS 10.11. However, one of the dependencies of this gem (EventMachine) requires it. If you're on El Capitan and are unable to install the gem, try running the following commands in a terminal:
@@ -99,7 +99,7 @@ All of the functionality of the Nylas Communications Platform is available throu
 ```ruby
 require 'nylas'
 
-nylas = Nylas::API.new(
+nylas = NylasV2::API.new(
     app_id: CLIENT_ID,
     app_secret: CLIENT_SECRET,
     access_token: ACCESS_TOKEN
@@ -122,4 +122,4 @@ Please refer to [Contributing](Contributing.md) for information about how to mak
 
 ## 📝 License
 
-This project is licensed under the terms of the MIT license. Please refer to [LICENSE](LICENSE.txt) for the full terms. 
+This project is licensed under the terms of the MIT license. Please refer to [LICENSE](LICENSE.txt) for the full terms.
