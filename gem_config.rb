@@ -6,7 +6,7 @@ require "./lib/nylas_v2/version"
 module GemConfig
   def self.apply(gem, name)
     gem.name = name
-    gem.files = Dir.glob("lib/nylas_v2.rb,nylas_v2/**/*.rb}")
+    gem.files = Dir.glob("lib/{nylas_v2.rb,nylas_v2/**/*.rb}")
     gem.license = "MIT"
     gem.version = NylasV2::VERSION
     gem.platform = "ruby"
