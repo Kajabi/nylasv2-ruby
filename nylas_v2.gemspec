@@ -3,7 +3,7 @@
 require "./gem_config"
 
 Gem::Specification.new do |gem|
-  GemConfig.apply(gem, "nylas-v2")
+  GemConfig.apply(gem, "nylas_v2")
   gem.summary = %(Gem for interacting with the Nylas API)
   gem.description = %(Gem for interacting with the Nylas API.)
   gem.add_runtime_dependency "rest-client", ">= 2.0", "< 3.0"

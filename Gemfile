@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-gemspec name: "nylas-v2"
+gemspec name: "nylas_v2"
